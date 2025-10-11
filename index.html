@@ -4,148 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сергей Печников - Junior JavaScript Developer</title>
-    <style>
-        /* Центровка по середине страницы */
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            /* Белые блоки для выделения на фоне*/
-            background-color: #f5f5f5;
-        }
-        
-        /* Закругление и покраска для шапки */
-        header {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            /* Отступы между разделами */
-            margin-bottom: 20px;
-        }
-        
-        /* Круглая рамка для фотки */
-        img {
-            border-radius: 50%;
-            border: 3px solid #2c3e50;
-        }
-        
-        /* Цвет для заголовков */
-        h1 {
-            color: #2c3e50;
-        }
-        
-        /* Красный цвет для должности */
-        .subtitle {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        
-        /* Закругление кнопок + синий цвет */
-        nav a {
-            background: #3498db;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            margin: 5px;
-            border-radius: 5px;
-        }
-        
-        /* Белые блоки для разделов с отступами */
-        section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            /* Отступы между разделами */
-            margin-bottom: 20px;
-        }
-        
-        /* Оформление списков */
-        ul {
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-        }
-        
-        /* Фон для футера */
-        footer {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        /* Изменение цвета ссылок в футере */
-        footer a {
-            color: #3498db;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div>
-            <img src="./images/myPhoto.jpg" alt="Сергей Печников" width="150" height="150">
-            <h1>Сергей Печников</h1>
-            <p class="subtitle">Junior JavaScript Developer</p>
-            <p>Пишу чистый и эффективный код</p>
-            <nav>
-                <a href="#contact">Связаться со мной</a>
-                <a href="#">Скачать резюме</a>
-            </nav>
+        <div class="container">
+            <div class="header-content">
+                <img src="./images/myPhoto.jpg" alt="Сергей Печников" class="profile-img">
+                <h1>Сергей Печников</h1>
+                <p class="subtitle">Junior JavaScript Developer</p>
+                <p class="tagline">Пишу чистый и эффективный код. Увлечен созданием удобных и технологичных продуктов.</p>
+                <div class="nav-buttons">
+                    <a href="#contact" class="btn">Связаться со мной</a>
+                    <a href="#" class="btn btn-outline">Скачать резюме</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <h2>Обо мне</h2>
-            <article>
-                <p>Увлекаюсь созданием удобных и технологичных продуктов. Постоянно изучаю новые технологии и лучшие практики разработки.</p>
-                <p>Сейчас изучаю JavaScript и современные фреймворки. Хочу работать в команде профессионалов и развиваться как разработчик.</p>
-            </article>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Увлекаюсь созданием удобных и технологичных продуктов. Постоянно изучаю новые технологии и лучшие практики разработки.</p>
+                        <p>Сейчас изучаю JavaScript и современные фреймворки. Хочу работать в команде профессионалов и развиваться как разработчик.</p>
+                        <p>В свободное время решаю задачи на Codewars, изучаю документацию и создаю pet-проекты для отработки навыков.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="card">
+                            <h3>Мой подход к работе</h3>
+                            <p>Стараюсь писать чистый, читаемый и поддерживаемый код. Уделяю внимание деталям и постоянно совершенствую свои навыки.</p>
+                            <p>Верю в важность командной работы и открытого обмена знаниями.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Мои навыки</h2>
-            <article>
-                <h3>Frontend</h3>
-                <ul>
-                    <li>HTML5/CSS3 (изучаю)</li>
-                    <li>JavaScript (изучаю)</li>
-                    <li>React (изучаю)</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Инструменты</h3>
-                <ul>
-                    <li>Git/GitHub (изучаю)</li>
-                    <li>VS Code (изучаю)</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Языки</h3>
-                <ul>
-                    <li>Русский (родной)</li>
-                    <li>Английский (B1)</li>
-                </ul>
-            </article>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-category card">
+                        <h3><i class="fas fa-code"></i> Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML5/CSS3 (изучаю)</li>
+                            <li>JavaScript (изучаю)</li>
+                            <li>React (изучаю)</li>
+                            <li>Адаптивная верстка</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category card">
+                        <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                        <ul class="skill-list">
+                            <li>Git/GitHub (изучаю)</li>
+                            <li>VS Code (изучаю)</li>
+                            <li>Chrome DevTools</li>
+                            <li>Figma (базовые знания)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category card">
+                        <h3><i class="fas fa-globe"></i> Языки</h3>
+                        <ul class="skill-list">
+                            <li>Русский (родной)</li>
+                            <li>Английский (B1)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer id="contact">
-        <div>
-            <h2>Контакты</h2>
-            <p>Готов к новым возможностям!</p>
-            <address>
-                <p>Email: <a href="mailto:sergey.pe4nikov@gmail.com">sergey.pe4nikov@gmail.com</a></p>
-                <p>Telegram: <a href="https://t.me/KiraIGod">@KiraIGod</a></p>
-                <p>GitHub: <a href="https://github.com/KiraIGod">KiraIGod</a></p>
-            </address>
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Контакты</h2>
+            <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem;">Готов к новым возможностям!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:sergey.pe4nikov@gmail.com">sergey.pe4nikov@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p><a href="https://t.me/KiraIGod">@KiraIGod</a></p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/KiraIGod">KiraIGod</a></p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Сергей Печников. Все права защищены.</p>
+            </div>
         </div>
     </footer>
 </body>
